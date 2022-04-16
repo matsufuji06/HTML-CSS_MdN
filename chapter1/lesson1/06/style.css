@@ -3,17 +3,17 @@
   justify-content: space-between;
   max-width: 640px;
   margin: 0 auto;
+  padding: 20px;
   outline: 1px dashed #999;
 }
+
 .col1 {
-  text-align: center;
-  width: calc((300 / 640) * 100%);
+  width: calc((290 / 600) * 100%);
   background-color: #e7e7e7;
 
 }
 .col2 {
-  text-align: center;
-  width: calc((300 / 640) * 100%);
+  width: calc((290 / 600) * 100%);
   background-color: #e7e7e7;
-  margin-left:  40px;
+
 }
