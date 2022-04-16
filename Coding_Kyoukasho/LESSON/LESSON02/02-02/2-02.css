@@ -35,8 +35,30 @@
 	card一覧レイアウト
 ----------------------------------------*/
 /*全てのデバイス向け＋PC用のスタイル*/
+.cardList {
+  display: flex;
+  justify-content: space-between;
+
+}
+.cardList__item {
+  width: calc((100% - 60px) / 3);
+}
 
 /*SP用のスタイル*/
 @media screen and (max-width: 767px) {
-  
+  .cardList {
+    display: block;
+  }
+  .cardList__item {
+    width: auto;
+  }
+
+  .cardList__item:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  .cardList__item:nth-child(3) {
+    margin-top: 30px;
+  }
+
 }
