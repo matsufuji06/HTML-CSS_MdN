@@ -82,4 +82,7 @@
 	.cardList::before {
 		order: 1;  /*before疑似要素を末尾に移動*/
 	}
+	.cardList::after {
+		order: 2;  /*before疑似要素を末尾に移動*/
+	}
 }
