@@ -47,7 +47,7 @@
 	margin-top: 20px;
 }
 .cardList02__item:nth-child(1) {
-
+	margin-top: 0; /*1行目の上を0にする*/
 }
 /*PCレイアウト共通の設定*/
 @media screen and (min-width: 768px),print {
