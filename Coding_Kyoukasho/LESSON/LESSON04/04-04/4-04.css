@@ -49,19 +49,50 @@
 .cardList02__item:nth-child(1) {
 
 }
+
 /*PCレイアウト共通の設定*/
 @media screen and (min-width: 768px),print {
+	.cardList02 {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.cardList02__item {
+		margin-left: 20px;
 
+	}
 }
+
 /*768〜991pxのみ2カラム*/
 @media screen and (min-width: 768px) and (max-width: 991px),print {
+	.cardList02__item {
+		width: calc((100% - 20px) / 2);
+	}
 
+	.cardList02__item:nth-child(2n+1) {
+		margin-left: 0;
+	}
+	
 }
 /*992px〜1199pxのみ3カラム*/
 @media screen and (min-width: 992px) and (max-width: 1199px),print {
-
+	.cardList02__item {
+		width: calc((100% - 40px) / 3);
+	}
+	
+	.cardList02__item:nth-child(3n+1) {
+		margin-left: 0;
+	}
+	
 }
 /*1200px以上4カラム*/
 @media screen and (min-width: 1200px),print {
+	.cardList02__item {
+		width: calc((100% - 60px) / 4);
+	}
+	
+	.cardList02__item:nth-child(4n+1) {
+		margin-left: 0;
+	}
 
 }
