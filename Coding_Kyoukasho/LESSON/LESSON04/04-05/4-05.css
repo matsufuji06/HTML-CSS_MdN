@@ -39,12 +39,23 @@
 	CardList03
 ----------------------------------------*/
 .cardList03 {
-
+	display: flex;
+	flex-direction: column;
+	margin-top: -20px;
 }
 .cardList03__item {
-
+	margin-top: 20px;
 }
 @media screen and (min-width: 768px),print {
+	.cardList03 {
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-left: -20px;
+	}
+	.cardList03__item {
+		margin-left: 20px;
+		width: calc((100% - 40px) / 2);
+	}
 
 }
 @media screen and (min-width: 992px),print {
