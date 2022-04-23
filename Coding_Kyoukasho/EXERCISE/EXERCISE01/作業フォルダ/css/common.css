@@ -1,111 +1,5 @@
 @charset "UTF-8";
-/*----------------------------------------
-	reset
-----------------------------------------*/
-*,
-::before,
-::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-* {
-  font-size: inherit;
-  line-height: inherit;
-}
-
-::before,
-::after {
-  text-decoration: inherit;
-  vertical-align: inherit;
-}
-
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, dialog, figure, footer, header, main, menu, nav, section,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
-header, footer, article, section, aside, main, nav, menu, figure, figcaption {
-  display: block;
-}
-
-span, small, strong, em, b, i {
-  color: inherit;
-}
-
-html {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-body {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border: 0;
-  vertical-align: top;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th {
-  text-align: left;
-}
-
-input, select {
-  vertical-align: middle;
-}
-
-input, textarea {
-  margin: 0;
-  padding: 0;
-}
-
-address {
-  font-style: normal;
-}
-
-q::before,
-q::after {
-  display: none;
-}
-
-/*----------------------------------------
-	base
-----------------------------------------*/
-body {
-  color: #333;
-  font-family: 'Noto Sans JP', sans-serif;
-  line-height: 1.5;
-}
-a {
-  color: #37952F;
-  transition: color 0.3s;
-}
-a:hover {
-  color: #70cc33;
-  text-decoration: none;
-}
 
 /*----------------------------------------
 	header
@@ -113,8 +7,7 @@ a:hover {
 /* スマホサイズ＆共通 */
 .header {
   position: fixed;
-  width: 100%;
-  /* height: calc(50px + 20px * 2); */
+  width: 400px;
   height: 50px;
   padding: 0 0 0 20px;
   background-color: #fff;
@@ -143,6 +36,34 @@ a:hover {
 /*----------------------------------------
 hamburger
 ----------------------------------------*/
+.header-hambergar {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #37952F;
+  right: 0;
+}
+
+.header-hambergar .spans {
+  position: absolute;
+  top: 17.5px;
+  left: 12.5px;
+}
+
+.header-hambergar span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.header-hambergar span:nth-child(1) {
+  margin-bottom: 3px;
+}
+
+.header-hambergar span:nth-child(2) {
+  margin-bottom: 3px;
+}
 
 
 /*----------------------------------------
@@ -153,13 +74,32 @@ gnav
 /*----------------------------------------
 mainContents
 ----------------------------------------*/
-main {
-  padding-top: 50px;
-}
 
-footer {
 
-}
+
+/*----------------------------------------
+footer
+----------------------------------------*/
+
+
+/*----------------------------------------
+container
+----------------------------------------*/
+
+
+/*----------------------------------------
+section
+----------------------------------------*/
+
+
+/*----------------------------------------
+heading
+----------------------------------------*/
+
+
+/*----------------------------------------
+button
+----------------------------------------*/
 
 /* --------------------.serviceのボタン --------------------*/
 .service_button {
@@ -218,28 +158,3 @@ footer {
     color: #fff;
   }
   /* ---------------------------------------- */
-/* ------------------------------------------------------------ */
-
-/*----------------------------------------
-	footer
-----------------------------------------*/
-
-
-/*----------------------------------------
-	container
-----------------------------------------*/
-
-
-/*----------------------------------------
-	section
-----------------------------------------*/
-
-
-/*----------------------------------------
-	heading
-----------------------------------------*/
-
-
-/*----------------------------------------
-	button
-----------------------------------------*/
