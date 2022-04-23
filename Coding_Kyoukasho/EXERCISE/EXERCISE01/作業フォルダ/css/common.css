@@ -110,10 +110,31 @@ a:hover {
 /*----------------------------------------
 	header
 ----------------------------------------*/
+/* スマホサイズ＆共通 */
+.header {
+  position: fixed;
+  width: 100%;
+  height: calc(50px + 20px * 2);
+  padding: 20px;
+  background-color: #fff;
+  /* z-index: 2; */
+}
 
+
+.header-nav {
+  /* display: none; */
+}
+
+/* #header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  z-index: 1;
+} */
 
 /*----------------------------------------
-	hamburger
+hamburger
 ----------------------------------------*/
 
 
@@ -125,6 +146,13 @@ gnav
 /*----------------------------------------
 mainContents
 ----------------------------------------*/
+main {
+  padding-top: calc(50px + 20px * 2);
+}
+
+footer {
+
+}
 
 /* --------------------.serviceのボタン --------------------*/
 .service_button {

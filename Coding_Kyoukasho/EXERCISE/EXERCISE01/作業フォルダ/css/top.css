@@ -7,7 +7,11 @@
 
 /* mainVisual
 ----------------------------------------*/
-
+.main_visual {
+	background-color: #37952F;
+	width: 400px;
+	height: 500px;
+}
 
 /* serviceList
 ----------------------------------------*/
